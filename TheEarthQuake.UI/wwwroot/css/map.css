@@ -40,7 +40,7 @@ body {
     fill-opacity: 1;
     stroke: white;
     stroke-opacity: 1;
-    stroke-width: 0.5;
+    stroke-width:0,5;
     transition: all .3s ease-out;
     cursor: pointer
 }
@@ -62,19 +62,8 @@ body {
     position: absolute;
     padding: 15px 25px;
     opacity: 0;
-    visibility: hidden;
+   /* visibility: hidden;*/
     font-size: 16px;
 }
 
-.site-footer {
-    text-align: center;
-    font-size: 12px;
-    margin-top: 40px;
-    color: #ababab;
-    &__link
 
-{
-    color: #3498db;
-    font-weight: 700;
-}
-}

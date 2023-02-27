@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TheEarthQuake.UI",
+    "\\TheEarthQuake.UI\\Views",
+    "\\TheEarthQuake.UI\\Views\\Home"
   ],
+  "SelectedNode": "\\TheEarthQuake.UI\\Views\\Home\\Map.cshtml",
   "PreviewInSolutionExplorer": false
 }
