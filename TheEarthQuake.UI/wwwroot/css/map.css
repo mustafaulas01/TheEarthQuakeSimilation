@@ -10,26 +10,19 @@ body {
     margin: 0 auto;
     padding: 0 30px;
 }
-
+.container{
+    display: contents;
+}
 .site-header {
     margin-bottom: 40px;
-    &__title
-
-{
     text-align: center;
-    background: #eee;
-    padding: 15px;
+    background: #db0000;
+    padding: 10px;
     border-radius: 4px;
     color: #9c9c9c;
-    font-size: 28px;
-    &__light
-
-{
+    font-size: 18px;
     font-weight: 300;
-    color: #adadad;
-}
-
-}
+    color: #ffffff;
 }
 
 .map-container {
@@ -52,12 +45,15 @@ body {
 
 .show-city-name--active {
     opacity: 1;
-    visibility: visible
+    visibility: visible;
+    background-color: #ffa30f;
+    border-radius: 10px;
+    padding: 15px 25px;
+    color: #fff;
+    position: absolute;
 }
 
 .show-city-name {
-    background-color: #f39c12;
-    border-radius: 10px;
     color: #fff;
     position: absolute;
     padding: 15px 25px;
@@ -66,4 +62,45 @@ body {
     font-size: 16px;
 }
 
+.scrolling-words-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.scrolling-words-box {
+    height: 3rem;
+    margin: auto;
+    overflow: hidden;
+}
+.scrolling-words-box ul {
+    margin: 0 0.625rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: scrollUp 15s infinite;
+}
+.scrolling-words-box ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 3rem;
+    list-style: none;
+}
+@keyframes scrollUp {
+    15%, 25% {
+        transform: translateY(-20%);
+   }
+    40%, 50% {
+        transform: translateY(-40%);
+   }
+    65%, 75% {
+        transform: translateY(-60%);
+   }
+    90%, 100% {
+        transform: translateY(-80%);
+   }
+}
 

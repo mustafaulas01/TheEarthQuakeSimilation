@@ -1,12 +1,17 @@
-﻿
-
-
-
-@*    <header class="site-header">
-        <div class="wrapper">
-            <h1 class="site-header__title">SVG Turkey Map <span class="site-header__title__light">without using jQuery</span></h1>
+﻿<!DOCTYPE html>
+     <header class="site-header">
+        <div class="scrolling-words-container">
+            <div class="scrolling-words-box">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                    <li>Lorem, ipsum dolor</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
         </div>
-    </header>*@
+    </div>
+    </header>
     <div class="map-container">
         <div class="wrapper">
             <svg id="svg-turkey-map" xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="https://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 800 350">
@@ -111,7 +116,7 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-
+        
         var svgTurkeyMap = document.getElementById("svg-turkey-map").getElementsByTagName("path");
 
         var cityName = document.getElementById("city-name");
@@ -123,7 +128,6 @@
                 alert("şehir:" + this.getAttribute("title"));
               
             })
-
 
             svgTurkeyMap[i].addEventListener("mousemove", function (event) {
                 cityName.classList.remove("show-city-name");
@@ -140,9 +144,9 @@
                 cityName.classList.add("show-city-name");
             });
 
-            svgTurkeyMap[i].addEventListener("click", function () {
+            @* svgTurkeyMap[i].addEventListener("click", function () {
                 window.location.href = this.getAttribute("data-city-name");
-            });
+            }); *@
 
             //console.log(svgTurkeyMap[i]);
         }
@@ -152,3 +156,4 @@
 
 
 </script>
+</html>
